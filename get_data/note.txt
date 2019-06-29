@@ -17,3 +17,7 @@ Giới thiệu về kĩ thuật CURL trong PHP:
 	Đối với file_get_contents thì 1 số website nó chặn hàm này, hàm này khá tốn memmory
 	CURL lấy content rất nhanh và tiết kiệm RAM
 	Không lấy được website sử dụng ajax
+Sử dụng CURL phần 1 cơ bản:
+	Demo cách lấy dữ liệu của 1 website
+	Trải qua 4 bước: Khởi tao, set options, exec và đóng dữ liệu
+	Trong trường hợp muốn xem nội dung html thì sử dụng hàm htmlspecialchars()
