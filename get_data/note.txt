@@ -1,0 +1,19 @@
+Sử dụng command line để chạy file php:
+	Đối với web cron job thì cần phải quen với việc sử dụng chạy PHP bằng command line
+	Thường thì trình duyệt thì thường dùng để view web hoặc debug cho nhanh
+	php -v: Lệnh kiểm tra version của PHP
+	Để chạy được file index thì dùng: php index.php
+	php -r '$a = 3; $b1= 10; $r = $a + $b; echo $r' ---> câu lệnh phải được đặt trong dấu ngoặc đơn
+	Ngoài ra thì khi chạy php bằng command line thì php nó hỗ trợ 1 biến hệ thống đó là $argv -> nó là 1 mảng
+		để debug thì var_dump nó ra, vị trí thứ 0 của nó lúc nào cũng là tên file -> từ vị trí 1 trở lên thì chính là biến
+		$argv
+		--> Ứng dụng là khi mà khi cần cào dữ liệu riêng của 1 web nào đó thì truyền link vào là được
+Giới thiệu về kĩ thuật CURL trong PHP:
+	Sử dụng PHP CURL để lấy content của 1 website
+	keyword: PHP get content from url
+	Khi tiến hành lấy file trên local(chính serve của mình) thì dùng file_get_contents()
+	Khi tiến hành lấy Data tại site khác thì sử dụng CURL
+		Có chức năng lấy được content của 1 website, download được ảnh, video, và cũng có thể upload được file
+	Đối với file_get_contents thì 1 số website nó chặn hàm này, hàm này khá tốn memmory
+	CURL lấy content rất nhanh và tiết kiệm RAM
+	Không lấy được website sử dụng ajax
