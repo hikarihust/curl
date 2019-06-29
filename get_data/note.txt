@@ -21,7 +21,7 @@ Sử dụng CURL phần 1 cơ bản:
 	Demo cách lấy dữ liệu của 1 website
 	Trải qua 4 bước: Khởi tao, set options, exec và đóng dữ liệu
 	Trong trường hợp muốn xem nội dung html thì sử dụng hàm htmlspecialchars()
-Hướng dẫn sử dụng CURL phần 2 set opt: Nghiên cứu các giá trị options
+Sử dụng CURL phần 2 set opt: Nghiên cứu các giá trị options
 	Bước set option là bước quan trọng nhất, vì ta lấy dữ liệu của nhiều website nên sẽ xẩy ra rất nhiều các trường hợp, mỗi
 		website thì sẽ tiến hành set 1 option khác nhau
 	Một số trang web thì nó sẽ check mình dùng trình duyệt nào và máy tính nào
@@ -30,3 +30,7 @@ Hướng dẫn sử dụng CURL phần 2 set opt: Nghiên cứu các giá trị 
 	Option TIMEOUT: Có 2 loại đó là timeout xử lý và timeout connect
 	Ngoài ra thì php có 1 timeout nữa đó là timeout của file: set_time_limit(0) -> disabel tính năng timeout đi
 	...
+Sử dụng CURL phần 3 proxy:
+	Kỹ thuật proxy nhằm che giấu địa chỉ IP thật của serve cũng như là của máy tính của ta
+	Keyword: proxy list free
+	Proxy chỉ sống được trong 1 khoảng time nhất định thôi -> cần tiến hành check xem proxy có còn sống hay không 
