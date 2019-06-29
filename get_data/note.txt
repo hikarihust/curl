@@ -36,3 +36,5 @@ Sử dụng CURL phần 3 proxy:
 	Proxy chỉ sống được trong 1 khoảng time nhất định thôi -> cần tiến hành check xem proxy có còn sống hay không 
 Sử dụng CURL phần 4 download file:
 	Khi vào các trang có thumnail... thì cần download được các hình ảnh về
+Sử dụng CURL phần 5 php curl class:
+	Keyword: php curl class

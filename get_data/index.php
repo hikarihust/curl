@@ -1,23 +1,24 @@
 <?php 
-	// for ($i=1; $i <100 ; $i++) { 
-	// 	echo $i;
-	// }
-	// var_dump($argv);
+	include 'libs/Curl/ArrayUtil.php';
+	include 'libs/Curl/CaseInsensitiveArray.php';
+	include 'libs/Curl/Curl.php';
+	include 'libs/Curl/Decoder.php';
+	include 'libs/Curl/Encoder.php';
+	include 'libs/Curl/MultiCurl.php';
+	include 'libs/Curl/StringUtil.php';
+	include 'libs/Curl/Url.php';
+	use \Curl\Curl;
 
-	// if (isset($argv[1])) {
-	// 	echo "Hello" . $argv[1];
-	// }
-	
-	// Khởi tạo
-	$url = 'http://ketqua.net/';
-	$ch = curl_init();
-	// Set option
-	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);	// Tắt chế độ tự in kết quả ra
-	// Tiến hành exec
-	$data = curl_exec($ch);
-	// Đóng
-	curl_close($ch);
+	$curl = new Curl();
+	$curl->setOpt(CURLOPT_ENCODING, '');
+	$html = $curl->get('https://mp3.zing.vn/');
 
-	echo htmlspecialchars($data);
+	if ($curl->error) {
+	    echo 'Error: ' . $curl->errorCode . ': ' . $curl->errorMessage . "\n";
+	} else {
+		var_dump(htmlspecialchars($html));
+	}
+
+	$curl->close();
+
 ?>
