@@ -34,3 +34,5 @@ Sử dụng CURL phần 3 proxy:
 	Kỹ thuật proxy nhằm che giấu địa chỉ IP thật của serve cũng như là của máy tính của ta
 	Keyword: proxy list free
 	Proxy chỉ sống được trong 1 khoảng time nhất định thôi -> cần tiến hành check xem proxy có còn sống hay không 
+Sử dụng CURL phần 4 download file:
+	Khi vào các trang có thumnail... thì cần download được các hình ảnh về
