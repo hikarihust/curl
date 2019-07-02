@@ -38,3 +38,14 @@ Sử dụng CURL phần 4 download file:
 	Khi vào các trang có thumnail... thì cần download được các hình ảnh về
 Sử dụng CURL phần 5 php curl class:
 	Keyword: php curl class
+Giới thiệu kĩ thuật dùng để bóc tách dữ liệu:
+	Có nhiều cách để lấy dữ liệu(parsing) đó là RegEx, DOM, XPath
+	XPath thì hay được sử dụng để parsing XML
+	DOM do là hướng đối tượng và trải qua nhiều bước xử lý code, duyệt nhiều vòng for -> tốn RAM hơn nhưng lại dễ hơn
+		-> Dùng thư viện DiDOM, ngoài ra thì còn có thư viện Simple HTML DOM nhưng thư viện này ít được sử dụng
+		Trong một số trường hợp mới dùng
+	Chủ yếu sử dụng RegEx: Kỹ thuật bắt chuỗi bắt những chuỗi cần thiết
+	3 bước lấy data: 
+		Lấy data của website: Dùng Curl
+		Parsing ra những phần cần lấy: Dùng RegEx, DOM, XPath
+		Save vào database
