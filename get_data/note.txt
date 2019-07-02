@@ -49,3 +49,20 @@ Giới thiệu kĩ thuật dùng để bóc tách dữ liệu:
 		Lấy data của website: Dùng Curl
 		Parsing ra những phần cần lấy: Dùng RegEx, DOM, XPath
 		Save vào database
+Hướng dẫn sử dụng regex phần 1:
+	Để so sánh bằng bằng thì cần đặt dấu bắt đầu và kết thúc
+	\d: Các số
+	\D: Là phủ định của \d
+	. : Mọi ký tự
+	\.: Ký tự dấu chấm '.'
+	[abc]: Chỉ a, b hoặc c
+	[^abc]: Phủ định của [abc], không phải a, b hay c
+	[a-z]: Các ký tự từ a->z
+	[0-9]: Các ký tự từ 0->9(Tương tự như \d)
+	[0-9](3): Hạn chế số lượng ký tự là 3 
+	\s: Ký tự khoảng trống
+	+ : Một hoặc nhiều ký tự liên tiếp
+	(a(bc)): Gom nhóm lại bằng dấu ngoặc tròn
+		vd: (AB)+C ---> matches ABC, ABABC, ABABABC, etc.
+	(abc|def): | Matches abc or def
+	Keyword: php regrex mail, php regrex url
