@@ -92,3 +92,5 @@ Hướng dẫn sử dụng regex phần 2:
 		Lấy data từ 1 file text
 		Validate dữ liệu
 		Via mod_rewrite
+Hướng dẫn sử dụng regex phần 3:
+	Viết chuỗi Regex hoàn chỉnh để lấy được Email
