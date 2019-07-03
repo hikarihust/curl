@@ -53,16 +53,42 @@ Hướng dẫn sử dụng regex phần 1:
 	Để so sánh bằng bằng thì cần đặt dấu bắt đầu và kết thúc
 	\d: Các số
 	\D: Là phủ định của \d
-	. : Mọi ký tự
+	. : Mọi ký tự(Ký tự bất kỳ)
+		/P.P/ -> kết quả có thể là PHP hay PIP...
 	\.: Ký tự dấu chấm '.'
 	[abc]: Chỉ a, b hoặc c
 	[^abc]: Phủ định của [abc], không phải a, b hay c
 	[a-z]: Các ký tự từ a->z
 	[0-9]: Các ký tự từ 0->9(Tương tự như \d)
 	[0-9](3): Hạn chế số lượng ký tự là 3 
+	\w: [a-zA-Z0-9]
 	\s: Ký tự khoảng trống
-	+ : Một hoặc nhiều ký tự liên tiếp
+	+ : Một hoặc nhiều ký tự liên tiếp(Ký tự có thể xuất hiện 1 lầ hoặc nhiều lần)
+		/PH+P/ -> kết quả có thể là PHP, PHHP...
+	* : Có hoặc không có(Có thể không có, có 1 hoặc có nhiều)
+		/PH*P/ -> kết quả có thể là PP, PHP, PHHP
+	? : 0 hoặc là 1(không có ký tự nào hoặc có 1 ký tự)
+		/PH?P/ -> kết quả là PP hoặc PHP
+	.?: Có thể là 1 ký tự bất kỳ hoặc không phải ký tự nào
+		/P.?P/ -> kết quả là PP, PHP, PIP...
+	.+: Có thể là 1 hoặc nhiều ký tự
+		/P.+P/ -> kết quả là PHP, PIP, PHPPHP, PASP...
+	.*: Hoặc không có ký tự nào hoặc là có nhiều ký tự
+		/P.*P/ -> Kết quả có thể là PP, PHP, PABP
+	.*?: Khắc phục được nhược điểm của .*
+		data: 'PHPABCPHPZPHPPHP'
+		/P.*P/ -> kết quả là 'PHPABCPHPZPHPPHPPP'
+		/P.*?P/ -> kết quả sẽ là: PHP, PHP, PHP, PHP và PP
+	{<min>, <max>}: Lấy theo số lượng quy định
+		/PH{1,2}P/ -> kết quả là PHP hoặc là PHHP
 	(a(bc)): Gom nhóm lại bằng dấu ngoặc tròn
 		vd: (AB)+C ---> matches ABC, ABABC, ABABABC, etc.
 	(abc|def): | Matches abc or def
 	Keyword: php regrex mail, php regrex url
+	Các ký tự đăc biệt: $, +, ., ^, *
+Hướng dẫn sử dụng regex phần 2:
+	Các chức năng chính của Regex là:
+		Lấy data từ 1 trang web
+		Lấy data từ 1 file text
+		Validate dữ liệu
+		Via mod_rewrite
