@@ -1,0 +1,16 @@
+<item>
+	<title>
+Thiết bị y tế hàng chục tỷ đồng lưu kho bệnh viện chờ sử dụng
+</title>
+	<description>
+		<![CDATA[ href="https://vnexpress.net/suc-khoe/thiet-bi-y-te-hang-chuc-ty-dong-luu-kho-benh-vien-cho-su-dung-3946795.html"]]>
+	</description>
+	<pubDate>Wed, 03 Jul 2019 12:09:34 +0700</pubDate>
+	<link>
+https://vnexpress.net/suc-khoe/thiet-bi-y-te-hang-chuc-ty-dong-luu-kho-benh-vien-cho-su-dung-3946795.html
+</link>
+	<guid>
+https://vnexpress.net/suc-khoe/thiet-bi-y-te-hang-chuc-ty-dong-luu-kho-benh-vien-cho-su-dung-3946795.html
+</guid>
+	<slash:comments>0</slash:comments>
+</item>

@@ -94,3 +94,5 @@ Hướng dẫn sử dụng regex phần 2:
 		Via mod_rewrite
 Hướng dẫn sử dụng regex phần 3:
 	Viết chuỗi Regex hoàn chỉnh để lấy được Email
+Xây dựng script get nhạc mp3:
+	[, ] đều là các ký tự đặc biệt
